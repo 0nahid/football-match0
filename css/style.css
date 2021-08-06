@@ -10,6 +10,10 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.container {
+  width: 1400px;
+  margin: auto;
+}
 header {
   height: 700px;
   background: var(--background-color);
@@ -32,6 +36,7 @@ nav a {
   padding: 8px 12px;
   color: white;
   border: none;
+  border-radius: 5px;
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
@@ -56,24 +61,34 @@ nav a {
 }
 .box-right img {
   width: 100%;
+  transition: 1s;
+}
+.box-right img:hover {
+  transform: scale(1.1);
 }
 
-.players {
+.player-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  padding: 70px 250px;
 }
-.player {
-  height: 450px;
-  box-shadow: 0px 0px 15px lightgrey;
-  margin: 20px 25px;
-  padding: 20px 20px;
-  border-radius: 7px;
+
+.player-box {
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+  padding: 15px;
+  border-radius: 10px;
 }
-.player img {
+
+.player-box img {
   width: 100%;
+  border-radius: 10px;
 }
+
 .upcoming {
-  margin-top:100px;
+  margin-top: 100px;
 }
 .upcoming p {
   color: #6c6c6c;
@@ -95,6 +110,7 @@ footer {
 }
 .footer-img {
   width: 500px;
+  margin: auto;
 }
 .footer-logo {
   width: 50px;
